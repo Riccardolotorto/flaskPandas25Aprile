@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+    </head>
+    <body>
+        <form action = "/esercizio1" method = "get">
+            {%for p in lista%}
+                <input type = "radio" name = "piattaforma" value = "{{p}}">{{p}}<br><br>
+            {%endfor%}
+            <input type = "submit" value = "esercizio1"/>
+        </form><br><br>
+        <form action = "/esercizio2" method = "get">
+            <input type = "text" name = "inzio"> inserisci l'anno di partenza<br>
+            <input type = "text" name = "fine"> inserisci l'anno di fine<br><br>
+            <input type = "submit" value = "esercizio2"/>
+        </form><br><br>
+        <form action = "/esercizio3">
+            <input type = "submit" value = "esercizio3"/>
+        </form><br><br>
+        <form action = "/esercizio4">
+            <input type = "submit" value = "esercizio4"/>
+        </form><br><br>
+        <form action = "/esercizio5" method = "get">
+            <input type = "text" name = "numero"> inserisci un numero di giochi<br><br>
+            <input type = "submit" value = "esercizio5"/>
+        </form><br><br>
+        <form action = "/esercizio6">
+            <input type = "submit" value = "esercizio6"/>
+        </form><br><br>
+        <form action = "/esercizio7" method = "get">
+            <input type = "text" name = "piatt"> inserisci una piattaforma<br><br>
+            <input type = "text" name = "genere"> inserisci un genere<br><br>
+            <input type = "submit" value = "esercizio7"/>
+        </form><br><br>
+        <form action = "/esercizio8">
+            <input type = "submit" value = "esercizio8"/>
+        </form><br><br>
+        <form action = "/esercizio9">
+            <input type = "submit" value = "esercizio9"/>
+        </form><br><br>
+        <form action = "/esercizio10" method = "get">
+            {%for pp in lista%}
+                <input type = "checkbox" name = "piattaformaCheck" value = "{{pp}}">{{pp}}<br><br>
+            {%endfor%}
+            <input type = "submit" value = "esercizio10"/>
+        </form>
+    </body>
+</html>
